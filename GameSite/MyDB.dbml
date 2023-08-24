@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="duyphan8401_" Class="MyDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sql.bsite.net\MSSQL2016;Initial Catalog=duyphan8401_;User ID=duyphan8401_" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="duyphan8401_ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Game" Member="Games">
+    <Type Name="Game">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Producer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

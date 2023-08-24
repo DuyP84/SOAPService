@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+    <script src="https://cdn.rawgit.com/abdmob/x2js/master/xml2json.js"></script> 
+    <script src="games.js"></script> 
+
+    <style>
+        #lstGames {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #lstGames td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #lstGames tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #lstGames tr:hover {background-color: #ddd;}
+        
+        #lstGames th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4ca9fa;
+          color: white;
+        }
+        </style>
+
+    </head> 
+    <body onload="page_Load()">
+    <h2 style="color:DodgerBlue;">GAME LIST</h2> 
+    <input type="text" id="txtKeyword" placeholder="Keyword" />&nbsp;
+    <input type="button" value="SEARCH" onclick="btnSearch_Click()"/><br/><br/> 
+    <table id="lstGames"></table><br/> 
+    <h2 style="color:DodgerBlue;">GAME DETAILS  </h2> 
+    <table> 
+    <tr>
+    <td>ID</td>
+    <td><input type="text" id="txtID" /></td> 
+    </tr> 
+    <tr>
+    <td>Name</td>
+    <td><input type="text" id="txtName" /></td> 
+    </tr> 
+    <tr>
+    <td>Genre </td>
+    <td><input type="text" id="txtGenre" /></td> 
+    </tr>
+    <tr>
+    <td>Producer </td>
+    <td><input type="text" id="txtProducer" /></td> 
+    </tr> 
+    <tr>
+    <td>Price</td>
+    <td><input type="text" id="txtPrice" /></td> 
+    </tr> 
+    <tr> 
+        <td colspan="2">
+    <input type="button" value="ADD NEW" onclick="btnAdd_click()" /> 
+    <input type="button" value="UPDATE" onclick="btnUpdate_Click()" />
+    <input type="button" value="DELETE" onclick="btnDeletee_Click()" /> 
+        </td>
+    </tr> 
+</table> 
+</body> 
+</html>
